@@ -3,8 +3,7 @@
     function isWeekend() {
         const todayDate = new Date();
         const day = todayDate.getDay();
-        const days = ["weekend", "weekday", "weekday", "weekday", "weekday", "weekday", "weekend"]
-        return days[day];
+        return ["weekend", "weekday", "weekday", "weekday", "weekday", "weekday", "weekend"][day];
     }
     console.log(isWeekend());
 }
