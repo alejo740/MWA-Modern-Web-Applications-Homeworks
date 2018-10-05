@@ -1,3 +1,7 @@
 lecture3/exercise2/file2.txt filter=lfs diff=lfs merge=lfs -text
 lecture3/exercise2/file3.txt filter=lfs diff=lfs merge=lfs -text
 lecture3/exercise2/file1.txt filter=lfs diff=lfs merge=lfs -text
+files/file1.txt filter=lfs diff=lfs merge=lfs -text
+files/file2.txt filter=lfs diff=lfs merge=lfs -text
+files/file3.txt filter=lfs diff=lfs merge=lfs -text
+files/file4.txt filter=lfs diff=lfs merge=lfs -text

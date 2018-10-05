@@ -5,7 +5,8 @@
 
     const server = http.createServer(function (req, res) {
         console.log('Start reading async');
-        fs.readFile(path.join(__dirname, 'file3.txt'), function(err, data){
+        const pathUrl = path.join(__dirname, '../../files/file3.txt');
+        fs.readFile(pathUrl, function(err, data){
             console.log('Finish reading async');
             res.write(data);
             res.end('End file')

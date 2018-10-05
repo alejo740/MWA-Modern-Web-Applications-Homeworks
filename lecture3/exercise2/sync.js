@@ -5,7 +5,8 @@
 
     const server = http.createServer(function (req, res) {
         console.log('Start reading');
-        var rs = fs.readFileSync(path.join(__dirname, 'file3.txt'));
+        const pathUrl = path.join(__dirname, '../../files/file3.txt');
+        var rs = fs.readFileSync(pathUrl);
         console.log('Finish reading');
         res.writeHead(200, {'Content-Type': 'text/plain'});
         res.write('Hello World!');

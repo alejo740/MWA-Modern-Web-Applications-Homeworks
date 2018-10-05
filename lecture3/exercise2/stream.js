@@ -5,7 +5,8 @@
 
     const server = http.createServer(function (req, res) {
         console.log('Start reading async');
-        fs.createReadStream(__dirname+ '/file3.txt')
+        const pathUrl = path.join(__dirname, '../../files/file3.txt');
+        fs.createReadStream(pathUrl)
         .pipe(res)
         .on('finish', () => console.log("end---file"));
         console.log('End process');
