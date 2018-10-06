@@ -13,6 +13,7 @@
     <h1>List of users --- Using ExpressJS with EJS templates</h1>
     <% userList.forEach(user => { %>
     <div class="user-info">
+        <img src="<%= user.photoURL %>"/><br>
         <span>Name: </span><%= user.name %><br>
         <span>Username: </span><%= user.username %><br>
         <span>Email: </span><%= user.email %><br>

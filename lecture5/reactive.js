@@ -4,6 +4,8 @@
     const express = require('express');
     const app = express();
 
+    app.set('x-powered-by', false)
+    
     app.get('/users', (request, response) => {
         response.status(200);
         response.set('Content-Type', 'text/html');
