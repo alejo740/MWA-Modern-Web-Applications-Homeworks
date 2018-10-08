@@ -21,10 +21,10 @@
         user.photoURL = image.data.thumbnailUrl
       })
       res.render('users', { userList: responseObj.data });
+      res.end();
     } catch (err) {
       next(err);
     }
-    res.end();
   });
 
   module.exports = router;
