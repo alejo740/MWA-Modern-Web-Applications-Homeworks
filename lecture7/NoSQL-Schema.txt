@@ -1,0 +1,16 @@
+book = {
+    "_id": int,
+    "isbn": string,
+    "name": string,
+    "tags": [string,...]
+    "studentId": int
+}
+
+student = {
+    "_id": int,
+    "name": string,
+    "books": [{
+        "bookId": int,
+        "returningDate": date
+        },...]
+}
