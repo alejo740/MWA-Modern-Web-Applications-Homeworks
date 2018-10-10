@@ -20,7 +20,7 @@ app.get('/secret', function (req, res, next) {
       let decrypted = decipher.update(encrypted, 'hex', 'utf8');
       decrypted += decipher.final('utf8');
 
-      res.status(200).json(decrypted);
+      res.status(200).json(decrypted); //"Welcome to MongoDB Week :)"
       client.close();
     });
   });
